@@ -63,7 +63,52 @@
     </main>
   
     <footer>
-      the footer
+      I am broke, so please fill out the following form so I can ask you for money:
+      <form onsubmit="alert('nice')">
+        <fieldset>
+          What is the data?<br>
+          <input type="date"> <br><br>
+
+          Will you give me money? <br>
+          <input type="radio" id = 'a'/> 
+          <label for="a">Yes</label><br>
+          <input type="radio" id = 'b'/> 
+          <label for="b">!No</label><br><br>
+
+          How would you like to give me money? <br>
+          <input type="checkbox" id = '1'/>
+          <label for="1">Venmo</label><br>
+          <input type="checkbox" id = '2'/>
+          <label for="2">Zelle</label><br>
+          <input type="checkbox" id = '3'/>
+          <label for="3">PayPal</label><br><br>
+
+          What currency would you like to use?
+          <input list="temp">
+          <datalist id="temp">
+            <option>USD</option>
+            <option>Euros</option>
+            <option>Pesos</option>
+            <option>Yuan</option>
+            <option>other</option>
+          </datalist> <br><br>
+
+          Please select how much money you would like to give me
+          <select>
+            <option>100</option>
+            <option>500</option>
+            <option>1000</option>
+          </select> <br><br>
+            
+          Please fill in your phone number so I can ask you for money<br>
+          <input type="text" placeholder="555-555-5555" /> <br><br>
+
+          Is there anything else you would like me to know?<br>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea> <br><br>
+          <button>Submit</button>
+        </fieldset>
+      </form>
+
     </footer>
   </body>
 </html>
