@@ -1,0 +1,108 @@
+/* make the background sky-blue */
+body {
+    background-color: rgb(207, 226, 233);
+    font-size: 4mm;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        font-size: 6mm;
+    }
+}
+
+/*changes the font of the whole site */
+* {
+    font-family: 'Righteous';
+}
+
+/*make all headers navy blue and line them up them*/
+/*h2 done inline*/
+#title{
+    color: navy;
+    margin: auto;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+}
+
+h3 {
+    color: hsl(240,100%,25%);
+    margin-left: 0.25in;
+    padding-bottom:0.3cm;
+}
+
+h4, div{
+    margin:0mm 0mm 0mm 6.35mm;
+}
+
+h4 {
+    color: hsl(240,100%,25%);
+    font-size: 1.3em;
+    padding: 0.5cm 0cm 0cm 0cm;
+    text-decoration: underline;
+}
+
+h5 {
+    display: none;
+}
+/*changing the CS text*/
+div.division{
+    border-width: 1px;
+    border-style: solid;  
+}
+
+/*make Agenda bigger and centered */ 
+summary{
+    font-size: 1.3em;
+    margin: 1rem 1lh;
+}
+
+/*make the image a little bigger */
+img{
+    width:35mm;
+    height:15mm;
+    position: relative;
+    left: 15mm;
+}
+
+/*control the size of the video so it doesn't cover the whole screen */
+.break + video{
+    max-width: 80mm;
+    max-height: 160mm;
+    position: static;
+}
+
+/*makes interactions fancier */
+[name="submit"]:hover {
+    background-color: rgb(142, 142, 231);
+    color: navy;
+}
+
+input:active {
+    color: navy;
+}
+
+div p {
+    color: rgb(12, 12, 92);
+}
+
+ul > li {
+    color: rgb(21, 124, 161);
+}
+
+
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.item { /*why is this not doing anything?-----------------------*/
+    /* flex: 1;
+    order: 5;
+} */ 
+
+
+/* How to use Flexbox and Grid? */
