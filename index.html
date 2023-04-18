@@ -2,15 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "mystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
     <link rel = "shortcut icon" type = "image/png" href = "CSE110.png">
     <title> Meeting Minutes </title>
   </head>
   <body>
     <header>
-      <h1> CSE 110 </h1>
+      <h1 id = "title"> CSE 110 </h1>
       <h2> Meeting Notes</h2>
       <h3> 4/12/2023</h3>
-
+      <h5> Bogus </h5>
       <nav> <!-- navigation -->
         <ul> <!-- unordered list -->
           <li> <a href = "https://www.youtube.com/watch?v=f49LJV1i-_w&ab_channel=Codecademy">Markdown Video</a></li> 
@@ -22,11 +24,8 @@
     <hr> <!-- creates a line -->
     <main>
       <section> <!-- what is gained from using section? -->
-         <h2> Logistics </h2>
-         <div>
-           
-           <b>Attendance:</b> Bob, Emily, Joe
-           
+         <h4> Logistics </h4>
+          <div>
            <details>
             <summary> Agenda</summary>
             <ol>
@@ -39,11 +38,13 @@
               </li>
             </ol>
           </details>            
-          
+          </div>
+          <div>
+          <br><b>Attendance:</b> Bob, Emily, Joe <br>
+
           <b>Unfinished Buisness:</b> Learning about JavaScript. 
 
-          </div>
-        </section>
+        
           <p>
             <b>Today's Agenda:</b>
             We will go over how to use HTML for building <i> websites</i>, as well as how to use markdown for
@@ -51,35 +52,41 @@
             <br> <!-- starts a new line -->
             <strong>We will also discuss </strong>about Languages such as Python, Java, and C.
           </p>
-
+        </div>
+      </section>
+        <div class = "division">
           These are the elements used to insert images and links:
           <br>
           <img src = "i&l.png" alt = "elements for inserting images and links">
           <br>
           To take a break from this rigorous content, here is a fun video:
-          <br>
+          <br class = "break">
           <video src = "waterfall.MOV" width="300" height="500" controls></video>
           <br>
           And here is an epic song.
           <br>
           <audio src = "MNH.mp3" controls></audio>
           <br>
-        
+        </div>
     </main>
     <hr>
     <footer>
       I am broke, so please fill out the following form so I can ask you for money:
-      <form>
+      <form class = "container">
         <fieldset>
+
+        <section class = "item">
           What is the data?<br>
           <input type="date"> <br><br>
-
+        </section>
+        <section class = "item">
           Will you give me money? <br>
           <input type="radio" id = 'a'> 
           <label for="a">Yes</label><br>
           <input type="radio" id = 'b'> 
           <label for="b">!No</label><br><br>
-
+        </section>
+        <section class = "item">
           How would you like to give me money? <br>
           <input type="checkbox" id = '1'>
           <label for="1">Venmo</label><br>
@@ -87,7 +94,8 @@
           <label for="2">Zelle</label><br>
           <input type="checkbox" id = '3'>
           <label for="3">PayPal</label><br><br>
-
+        </section>
+        <section class = "item">
           What currency would you like to use?
           <input list="temp">
           <datalist id="temp">
@@ -97,20 +105,25 @@
             <option>Yuan</option>
             <option>other</option>
           </datalist> <br><br>
-
+        </section>
+        <section class = "item">
           Please select how much money you would like to give me
           <select>
             <option>100</option>
             <option>500</option>
             <option>1000</option>
           </select> <br><br>
-            
+        </section>
+        <section class = "item">
           Please fill in your phone number so I can ask you for money<br>
           <input type="text" placeholder="555-555-5555"> <br><br>
-
+        </section>
+        <section class = "item">
           Is there anything else you would like me to know?<br>
           <textarea id="message" name="message" rows="4" cols="50"></textarea> <br><br>
-          <button>Submit</button>
+        </section>
+
+          <button name="submit">Submit</button>
         </fieldset>
       </form>
 
