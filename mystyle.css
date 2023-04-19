@@ -89,20 +89,32 @@ div p {
 ul > li {
     color: rgb(21, 124, 161);
 }
-
-
-
-/* .container {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-  
-.item { /*why is this not doing anything?-----------------------*/
-    /* flex: 1;
-    order: 5;
-} */ 
 
+.container > div {
+    background-color: rgb(207, 226, 233);
+    color: navy;
+    margin: 10px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 15px;
+  }
 
-/* How to use Flexbox and Grid? */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .grid-container > div  {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #2196F3;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
