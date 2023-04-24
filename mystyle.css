@@ -17,7 +17,7 @@ body {
 
 /*make all headers navy blue and line them up them*/
 /*h2 done inline*/
-#title{
+#CSE110{
     color: navy;
     margin: auto;
     display: inline-block;
@@ -66,7 +66,7 @@ img{
 }
 
 /*control the size of the video so it doesn't cover the whole screen */
-.break + video{
+img + video{
     max-width: 80mm;
     max-height: 160mm;
     position: static;
@@ -78,8 +78,8 @@ img{
     color: navy;
 }
 
-input:active {
-    color: navy;
+[name="submit"]:active {
+    color: red;
 }
 
 div p {
